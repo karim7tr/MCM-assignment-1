@@ -1,0 +1,6 @@
+function R = ComputeAngleAxis(theta,v)
+%Implement here the Rodrigues formula
+I = eye(3);
+Q = v-skew = [0 -v(3) v(2); v(3) 0 -v(1); -v(2) vx 0];
+R = I+ Q*sin(theta)+Q^2*(I-cos(theta));
+
